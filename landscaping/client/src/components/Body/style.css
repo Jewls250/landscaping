@@ -1,0 +1,50 @@
+.backgroundImg{
+    background-image: url(../assets/daniel-barnes-PyFzygP2eNg-unsplash.jpg);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.seviceImg{
+    background-image: url(../assets/remi-muller-LlHgaeBwYVE-unsplash.jpg);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.reviewImg{
+    background-image: url(../assets/reviewImg.png);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h3{
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.centering{
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.outline{
+    -webkit-text-stroke: 2.75px rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: 800;
+}
+
