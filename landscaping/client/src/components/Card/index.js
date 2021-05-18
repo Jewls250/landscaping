@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card(props) {
     return (
-      <div className="card">
+      <div className="card m-3">
         <div className="card-body">
           <img
             src={props.img}
@@ -17,9 +17,6 @@ function Card(props) {
           <p className="card-text">
             {props.text}
           </p>
-          <Link to="/" className="btn btn-primary">
-            {props.link}
-          </Link>
         </div>
       </div>
     );

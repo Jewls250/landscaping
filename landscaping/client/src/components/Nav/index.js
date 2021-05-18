@@ -5,9 +5,9 @@ function Nav() {
     return(
         <div>
             <header>
-                <nav className="navbar navbar-expand-sm navbar-light bg-light">
+                <nav className="navbar navbar-expand-sm navbar-light bg-light ml-auto">
                     <Link className="navbar-brand py-4" href="#"
-                    >S and S Power Washing And Lawn Care</Link>
+                    ></Link>
                     <button
                     className="navbar-toggler d-lg-none"
                     type="button"
@@ -29,10 +29,14 @@ function Nav() {
                         <Link className="nav-link" href="#">Services</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" href="#">Review</Link>
+                        <Link className="nav-link" href="#">About Me</Link>
                         </li>
                         <li className="nav-item">
+
                         <Link className="nav-link" href="#">Login</Link>
+
+                        <Link className="nav-link" href="#">Review</Link>
+
                         </li>
                         <li>
                         <Link className="nav-link text-danger" href="tel:713-992-0916"
