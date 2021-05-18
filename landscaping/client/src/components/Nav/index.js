@@ -32,7 +32,11 @@ function Nav() {
                         <Link className="nav-link" href="#">About Me</Link>
                         </li>
                         <li className="nav-item">
+
+                        <Link className="nav-link" href="#">Login</Link>
+
                         <Link className="nav-link" href="#">Review</Link>
+
                         </li>
                         <li>
                         <Link className="nav-link text-danger" href="tel:713-992-0916"
