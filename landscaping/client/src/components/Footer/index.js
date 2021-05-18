@@ -7,9 +7,9 @@ function Footer (){
         <footer>
           <div className="socialMedias">
             <row className="row">
-              <artical className="col-sm-4 my-3"></artical>
+              <artical className="col-sm-4 py-3"></artical>
 
-              <artical className="col-sm-4 my-3">
+              <artical className="col-sm-4 py-3">
                 <Link
                   href="https://www.facebook.com/giuliano.serawop.5"
                   target="_blank"
