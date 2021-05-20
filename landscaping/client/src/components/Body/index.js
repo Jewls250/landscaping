@@ -16,10 +16,7 @@ function Body (){
           </h1>
           <div className="row">
             <div className="col-sm-6">
-              <Card
-                img="./components/assets/lawnMaintenance.jpeg"
-                title="Lawn Maintenance"
-              />
+              <Card img="" title="Lawn Maintenance" />
             </div>
             <div className="col-sm-6">
               <Card img="" title="Debri Clean Up" />
