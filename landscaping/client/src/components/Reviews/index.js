@@ -1,9 +1,11 @@
-// import React from "react"
+import React from "react"
 
-// function Body() {
-//     return(
+function ReviewsBody() {
+    return(
+<div>
 
-//     )
-// }
+</div>
+    )
+}
 
-// export default Body;
+export default ReviewsBody;
