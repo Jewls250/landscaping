@@ -2,13 +2,15 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const passport = require("./config/passport");
-const Sequelize = require("sequelize");
+const passport = require("passport");
+const mongoose = require("mongoose");
 
 
-app.use(
-  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
-);
+// app.use(
+//   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
+// );
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 // Serve up static assets (usually on heroku)
@@ -18,30 +20,18 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
-require("dotenv").config();
-const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
-  {
-    host: "localhost",
-    dialect: "mysql",
-    port: 3306,
-  }
+// Add routes, both API and view
+app.use(require('./routes'));
+
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/landscapingdb"
 );
-module.exports = sequelize;
 
-// Syncing our database and logging a message to the user upon success
-db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
-    console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-      PORT,
-      PORT
-    );
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
   });
-});
+
