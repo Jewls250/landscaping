@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Footer (){
     return (
-      <div>
-        <footer>
+      
+        <footer className="fixed-bottom">
           <div className="socialMedias">
             <row className="row">
               <artical className="col-sm-4 py-3"></artical>
@@ -32,7 +32,7 @@ function Footer (){
             </row>
           </div>
         </footer>
-      </div>
+     
     );
 };
 

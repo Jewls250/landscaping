@@ -26,8 +26,8 @@ class Nav extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-light ml-auto">
-        <Link className="navbar-brand text-light" to="/">
+      <nav className="navbar navbar-expand-sm fixed-top ml-auto p-3" id="sticky">
+        <Link className="navbar-brand" to="/">
         </Link>
         <button
           onClick={this.toggleNav}
@@ -48,7 +48,7 @@ class Nav extends Component {
                 className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
                 to="/"
               >
-               HOME
+               Home
               </Link>
             </li>
             <li className="nav-item">

@@ -40,6 +40,7 @@ function App() {
   }
 
   return (
+
     !isAuthenticating && (<Router>
       <div>
        
@@ -58,6 +59,8 @@ function App() {
       </div>
     </Router>
   ));
+
+
 }
 
 export default App;
