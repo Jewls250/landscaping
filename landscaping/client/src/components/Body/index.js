@@ -14,35 +14,35 @@ function Body (){
           <h1 className="text-center py-4 text-white outline">
             <u>Services</u>
           </h1>
-        <div className="row">
-          <div className="col-sm-6">
-            <Card img="" title="Lawn Maintenance" />
+          <div className="row">
+            <div className="col-sm-6">
+              <Card img="" title="Lawn Maintenance" />
+            </div>
+            <div className="col-sm-6">
+              <Card img="" title="Debri Clean Up" />
+            </div>
           </div>
-          <div className="col-sm-6">
-            <Card img="" title="Debri Clean Up" />
+          <div className="row">
+            <div className="col-sm-6">
+              <Card img="" title="Glass Cleaning" />
+            </div>
+            <div className="col-sm-6">
+              <Card img="" title="Planting" />
+            </div>
+            <div className="col-sm-6">
+              <Card img="" title="Power Washing" />
+            </div>
+            <div className="col-sm-6">
+              <Card img="" title="Trimming" />
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-6">
-            <Card img="" title="Glass Cleaning" />
-          </div>
-          <div className="col-sm-6">
-            <Card img="" title="Planting" />
-          </div>
-          <div className="col-sm-6">
-            <Card img="" title="Power Washing" />
-          </div>
-          <div className="col-sm-6">
-            <Card img="" title="Trimming" />
-          </div>
-        </div>
         </div>
         <div className="backgroundImg">
           <h1 className="text-center py-4  text-white outline">
             <u>About Us</u>
           </h1>
           <section className="text-center text-white ">
-            <h3 className='outline2'>
+            <h3 className="outline2">
               Our mission is to procide only the best power washing and
               landscaping services to anyone in need to create or maintain your
               outside living environment. We realize your landscape is a place

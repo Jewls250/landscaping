@@ -32,8 +32,9 @@ export default function Login() {
 
   return (
     <div className="Login">
-      <ParticlesBg type="circle">
-        <Form onSubmit={handleSubmit}>
+      <ParticlesBg style={{position: "absolute",
+zIndex: -1, backgroundColor: 'transparent'}} type="circle">
+        <Form onSubmit={handleSubmit} >
           <Form.Group size="lg" controlId="email">
             <Form.Label>Email</Form.Label>
             <Form.Control

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .backgroundImg{
     background-image: url(../assets/daniel-barnes-PyFzygP2eNg-unsplash.jpg);
     min-height: 700px;
@@ -61,3 +65,4 @@ h3{
     font-size: 35px;
     font-weight: 900;
 }
+
