@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, Component }  from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./style.css";
 import { Auth } from "aws-amplify";
 import { useAppContext } from "../../libs/contextLib";
 import { useHistory } from "react-router-dom";
+import ParticlesBg from 'particles-bg'
+
 
 export default function Login() {
   const { userHasAuthenticated } = useAppContext();
@@ -29,29 +31,31 @@ export default function Login() {
   }
 
   return (
-    <div className="Login margin">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
-        </Button>
-      </Form>
+    <div className="Login">
+      <ParticlesBg type="circle">
+        <Form onSubmit={handleSubmit}>
+          <Form.Group size="lg" controlId="email">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              autoFocus
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Form.Group>
+          <Form.Group size="lg" controlId="password">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </Form.Group>
+          <Button block size="lg" type="submit" disabled={!validateForm()}>
+            Login
+          </Button>
+        </Form>
+      </ParticlesBg>
     </div>
   );
 }
