@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const postRoutes = require("./reviews");
-// const userRoutes = require("./adminreview");
+const userRoutes = require("./adminreview");
 const passport = require("passport");
 
 // Post routes
