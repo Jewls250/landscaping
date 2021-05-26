@@ -29,7 +29,7 @@ export default function Login() {
   }
 
   return (
-    <div className="Login">
+    <div className="Login margin">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>

@@ -40,23 +40,27 @@ function App() {
   }
 
   return (
-    !isAuthenticating && (<Router>
-      <div>
-        <Nav />
-        <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
-        <Wrapper>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login1">
+    !isAuthenticating && (
+      <Router>
+        <div>
+          <Nav />
+          <AppContext.Provider
+            value={{ isAuthenticated, userHasAuthenticated }}
+          >
+            <Wrapper>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/login1">
                 <Login1 />
-          </Route>
-          <Route exact path="/Review" component={Reviews} />
-        </Wrapper>
-</AppContext.Provider>
-        
-        <Footer />
-      </div>
-    </Router>
-  ));
+              </Route>
+              <Route exact path="/Review" component={Reviews} />
+            </Wrapper>
+          </AppContext.Provider>
+
+          <Footer />
+        </div>
+      </Router>
+    )
+  );
 }
 
 export default App;

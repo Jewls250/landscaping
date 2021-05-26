@@ -1,27 +1,30 @@
 .backgroundImg{
     background-image: url(../assets/daniel-barnes-PyFzygP2eNg-unsplash.jpg);
-    min-height: 500px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .seviceImg{
     background-image: url(../assets/remi-muller-LlHgaeBwYVE-unsplash.jpg);
-    min-height: 500px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 .reviewImg{
     background-image: url(../assets/reviewImg.png);
-    min-height: 500px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 h3{
@@ -48,3 +51,14 @@ h3{
     font-weight: 800;
 }
 
+.outline{
+    -webkit-text-stroke: 2.75px rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.outline2{
+    -webkit-text-stroke: 2.5px rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 900;
+}

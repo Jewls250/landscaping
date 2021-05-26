@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
+    "aws-amplify": "^4.0.2",
     "axios": "^0.21.1",
     "babel": "^6.23.0",
     "bcrypt": "^5.0.1",
