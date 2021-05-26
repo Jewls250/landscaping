@@ -42,14 +42,15 @@ function App() {
   return (
     !isAuthenticating && (<Router>
       <div>
-        <Nav />
+       
         <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+        <Nav handleLogout={handleLogout}/>
         <Wrapper>
           <Route exact path="/" component={Home} />
           <Route exact path="/login1">
                 <Login1 />
           </Route>
-          <Route exact path="/Review" component={Reviews} />
+          {isAuthenticated && <Route exact path="/Review" component={Reviews} />}
         </Wrapper>
 </AppContext.Provider>
         

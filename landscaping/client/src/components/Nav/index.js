@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import {AppContext} from '../../libs/contextLib';
 class Nav extends Component {
   state = {
     open: false,
     width: window.innerWidth
   };
+  static contextType= AppContext
   updateWidth = () => {
     const newState = { width: window.innerWidth };
     if (this.state.open && newState.width > 991) {
@@ -17,7 +19,7 @@ class Nav extends Component {
     this.setState({ open: !this.state.open });
   };
   componentDidMount() {
-    window.addEventListener("resize", this.updateWidth);
+      window.addEventListener("resize", this.updateWidth);
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWidth);
@@ -68,13 +70,21 @@ class Nav extends Component {
               </Link>
             </li>
             <li>
-            <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/Login1" ? "nav-link active" : "nav-link"}
-                to="/Login1"
-              >
-                Login
-              </Link>
+          {this.context.isAuthenticated ? 
+          <Link
+          onClick={this.props.handleLogout}
+          className={"nav-link"}
+          to="/"
+        >
+          Logout
+        </Link>:
+          <Link
+              onClick={this.toggleNav}
+              className={window.location.pathname === "/Login1" ? "nav-link active" : "nav-link"}
+              to="/Login1"
+            >
+              Login
+            </Link>}
               </li>
               <li>
             <Link
