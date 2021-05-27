@@ -16,9 +16,25 @@ let adminSeed = [
 let reviewSeed = [
   {
     userName: "email@email.com",
-    userComment: "password",
+    userComment: "best",
+    rating: 5,
+  },
+  {
+    userName: "email@email.com",
+    userComment: "worst",
     rating: 1,
   },
+  {
+    userName: "email@email.com",
+    userComment: "better",
+    rating: 4,
+  },
+  {
+    userName: "email@email.com",
+    userComment: "ok",
+    rating: 3,
+  },
+
 ];
 db.User.deleteMany({})
   .then(() => db.User.insertMany(adminSeed))
