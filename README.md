@@ -30,7 +30,7 @@ https://docs.google.com/presentation/d/1ZG76bw4gzFKPntZiz3QueXPLnTPfVKiRLCVJ9bQZ
 ![screnshot 1](https://github.com/Jewls250/landscaping/blob/main/landscaping/client/src/components/assets/Screen%20Shot%202021-05-28%20at%208.56.15%20AM.png)
 
 
-![screenshot2]()
+![screenshot2](https://github.com/Jewls250/landscaping/blob/main/landscaping/client/src/components/assets/Screen%20Shot%202021-05-28%20at%208.56.23%20AM.png)
 
 This webpage uses Passport `npm passport`, that is Express-compatible authentication middleware for Node.js. The Passport can only match a username/ID and password. Then we use `npm bcrypt` for salting and hashing a readble password to different word.
  
@@ -53,5 +53,4 @@ This webpage uses Passport `npm passport`, that is Express-compatible authentica
 # Made By : 
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40niyati7892-orange)
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40jewls250-orange)
-![GitHub license](https://img.shields.io/badge/Made%20by-%40
-davidsackett14-orange)
+![GitHub license](https://img.shields.io/badge/Made%20by-%40davidsackett14-orange)
