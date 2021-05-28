@@ -27,7 +27,7 @@ https://docs.google.com/presentation/d/1ZG76bw4gzFKPntZiz3QueXPLnTPfVKiRLCVJ9bQZ
 
 ## App Screen Shot
 
-![screnshot 1]()
+![screnshot 1](https://github.com/Jewls250/landscaping/blob/main/landscaping/client/src/components/assets/Screen%20Shot%202021-05-28%20at%208.56.15%20AM.png)
 
 
 ![screenshot2]()
