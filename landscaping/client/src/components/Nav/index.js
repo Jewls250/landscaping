@@ -51,24 +51,8 @@ class Nav extends Component {
                Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
-                to="/services"
-              >
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
-                to="/about"
-              >
-                About Us
-              </Link>
-            </li>
+            
+           
             <li>
           {this.context.isAuthenticated ? 
           <Link
@@ -86,15 +70,7 @@ class Nav extends Component {
               Login
             </Link>}
               </li>
-              <li>
-            <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/Review" ? "nav-link active" : "nav-link"}
-                to="/Review"
-              >
-                Review
-              </Link>
-              </li>
+            
           </ul>
         </div>
       </nav>

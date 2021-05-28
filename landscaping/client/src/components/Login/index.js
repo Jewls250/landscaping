@@ -5,7 +5,7 @@ import "./style.css";
 import { Auth } from "aws-amplify";
 import { useAppContext } from "../../libs/contextLib";
 import { useHistory } from "react-router-dom";
-import ParticlesBg from 'particles-bg'
+//import ParticlesBg from 'particles-bg'
 
 
 export default function Login() {
@@ -32,8 +32,7 @@ export default function Login() {
 
   return (
     <div className="Login">
-      <ParticlesBg style={{position: "absolute",
-zIndex: -1, backgroundColor: 'transparent'}} type="circle">
+     
         <Form onSubmit={handleSubmit} >
           <Form.Group size="lg" controlId="email">
             <Form.Label>Email</Form.Label>
@@ -56,7 +55,7 @@ zIndex: -1, backgroundColor: 'transparent'}} type="circle">
             Login
           </Button>
         </Form>
-      </ParticlesBg>
+      
     </div>
   );
 }
