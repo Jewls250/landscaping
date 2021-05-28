@@ -35,7 +35,7 @@ https://docs.google.com/presentation/d/1ZG76bw4gzFKPntZiz3QueXPLnTPfVKiRLCVJ9bQZ
 This webpage uses Passport `npm passport`, that is Express-compatible authentication middleware for Node.js. The Passport can only match a username/ID and password. Then we use `npm bcrypt` for salting and hashing a readble password to different word.
  
 
-![screenshot3]()
+![screenshot3](https://github.com/Jewls250/landscaping/blob/main/landscaping/client/src/components/assets/screen3.png)
 
 
 # License 
